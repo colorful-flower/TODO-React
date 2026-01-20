@@ -1,0 +1,167 @@
+./* ===== 全体 ===== */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f6f7f8;
+  margin: 0;
+  padding: 40px 0;
+  color: #333;
+}
+
+.app {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #f6f7f8;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== タイトル ===== */
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #555;
+}
+
+/* ===== 件数 ===== */
+.count {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* ===== 入力 ===== */
+.input-area {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #e5e7eb;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #f59eae;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+button.primary:disabled {
+  opacity: 0.5;
+}
+
+/* ===== フィルター・ソート ===== */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.controls button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 13px;
+  background: #f3f4f6;
+}
+
+.controls button.active {
+  background: #f59eae;
+  color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  color: #555;
+}
+
+/* ===== Todo ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo {
+  padding: 14px;
+  border-radius: 14px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.todo.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.todo-actions .danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ===== 全削除 ===== */
+.clear-all {
+  margin-top: 24px;
+  align-self: flex-end;
+  background: #fde2e2;
+  color: #c53030;
+}
+
+/* =====フィルターボタンをタブ化===== */
+.filter-group {
+  display: inline-flex;
+  background: #f3f4f6;
+  padding: 4px;
+  border-radius: 999px;
+}
+
+.filter-group button {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #555;
+}
+
+.filter-group button.active {
+  background: #f2a7b1;
+  color: white;
+}
